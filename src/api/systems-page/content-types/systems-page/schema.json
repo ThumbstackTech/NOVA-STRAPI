@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "systems_pages",
+  "info": {
+    "singularName": "systems-page",
+    "pluralName": "systems-pages",
+    "displayName": "systemsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "api_kits_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::api-kits-card.api-kits-card",
+      "mappedBy": "systems_page"
+    },
+    "section_data": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-data.section-data",
+      "mappedBy": "systems_page"
+    }
+  }
+}

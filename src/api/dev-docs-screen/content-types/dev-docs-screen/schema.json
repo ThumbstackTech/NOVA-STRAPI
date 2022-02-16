@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_docs_screens",
+  "info": {
+    "singularName": "dev-docs-screen",
+    "pluralName": "dev-docs-screens",
+    "displayName": "devDocsScreen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "api_kits_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::api-kits-card.api-kits-card",
+      "mappedBy": "dev_docs_screen"
+    },
+    "section_data": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-data.section-data",
+      "mappedBy": "dev_docs_screen"
+    }
+  }
+}

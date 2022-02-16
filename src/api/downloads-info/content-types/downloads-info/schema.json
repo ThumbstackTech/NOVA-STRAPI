@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloads_infos",
+  "info": {
+    "singularName": "downloads-info",
+    "pluralName": "downloads-infos",
+    "displayName": "downloads info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "downloadTag": {
+      "type": "string"
+    },
+    "downloadsCount": {
+      "type": "integer"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "mappedBy": "downloads_info"
+    }
+  }
+}

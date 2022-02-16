@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buttons",
+  "info": {
+    "singularName": "button",
+    "pluralName": "buttons",
+    "displayName": "button"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "learn": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::learn.learn",
+      "inversedBy": "buttons"
+    }
+  }
+}

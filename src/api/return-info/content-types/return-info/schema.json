@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "return_infos",
+  "info": {
+    "singularName": "return-info",
+    "pluralName": "return-infos",
+    "displayName": "return info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "percentageReturn": {
+      "type": "integer",
+      "max": 100
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tag": {
+      "type": "string"
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "inversedBy": "return_info"
+    }
+  }
+}

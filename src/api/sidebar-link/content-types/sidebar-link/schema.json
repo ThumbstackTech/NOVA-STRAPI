@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sidebar_links",
+  "info": {
+    "singularName": "sidebar-link",
+    "pluralName": "sidebar-links",
+    "displayName": "sidebar-link"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": ["images", "files", "videos"],
+      "type": "media",
+      "multiple": true
+    },
+    "sidebar_collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sidebar-collection.sidebar-collection",
+      "inversedBy": "sidebar_links"
+    }
+  }
+}

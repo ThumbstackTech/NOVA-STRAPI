@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sidebar_collections",
+  "info": {
+    "singularName": "sidebar-collection",
+    "pluralName": "sidebar-collections",
+    "displayName": "sidebar-collection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sidebar_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sidebar-link.sidebar-link",
+      "mappedBy": "sidebar_collection"
+    }
+  }
+}

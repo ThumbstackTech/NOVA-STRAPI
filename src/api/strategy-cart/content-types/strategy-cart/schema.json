@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strategy_carts",
+  "info": {
+    "singularName": "strategy-cart",
+    "pluralName": "strategy-carts",
+    "displayName": "strategy-cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "roiValue": {
+      "type": "decimal"
+    },
+    "minInvest": {
+      "type": "integer"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "strategy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::strategy.strategy",
+      "inversedBy": "strategy_carts"
+    }
+  }
+}

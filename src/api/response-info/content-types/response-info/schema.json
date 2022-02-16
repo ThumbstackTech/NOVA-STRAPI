@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "response_infos",
+  "info": {
+    "singularName": "response-info",
+    "pluralName": "response-infos",
+    "displayName": "response info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "response_info"
+    }
+  }
+}

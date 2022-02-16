@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kit_languages",
+  "info": {
+    "singularName": "kit-language",
+    "pluralName": "kit-languages",
+    "displayName": "kit language"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bottomTag": {
+      "type": "string"
+    },
+    "icons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::icon.icon"
+    }
+  }
+}

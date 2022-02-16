@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learns",
+  "info": {
+    "singularName": "learn",
+    "pluralName": "learns",
+    "displayName": "learn"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "buttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::button.button",
+      "mappedBy": "learn"
+    }
+  }
+}

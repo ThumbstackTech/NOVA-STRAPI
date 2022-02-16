@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentation_codes",
+  "info": {
+    "singularName": "documentation-code",
+    "pluralName": "documentation-codes",
+    "displayName": "documentationCode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "mandatory": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "values": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "typeNameTag": {
+      "type": "string"
+    },
+    "headers_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headers-code.headers-code",
+      "inversedBy": "documentation_codes"
+    },
+    "req_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::req-code.req-code",
+      "inversedBy": "documentation_codes"
+    },
+    "res_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::res-code.res-code",
+      "inversedBy": "documentation_codes"
+    }
+  }
+}

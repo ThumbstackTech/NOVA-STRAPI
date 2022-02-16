@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_carts",
+  "info": {
+    "singularName": "service-cart",
+    "pluralName": "service-carts",
+    "displayName": "service-cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "plateform": {
+      "type": "string"
+    },
+    "ratingNum": {
+      "type": "integer"
+    },
+    "ratingAvg": {
+      "type": "decimal"
+    },
+    "usersNum": {
+      "type": "integer"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::service.service",
+      "inversedBy": "service_carts"
+    }
+  }
+}

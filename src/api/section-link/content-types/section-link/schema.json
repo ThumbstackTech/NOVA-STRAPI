@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_links",
+  "info": {
+    "singularName": "section-link",
+    "pluralName": "section-links",
+    "displayName": "section link"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagName": {
+      "type": "string"
+    }
+  }
+}

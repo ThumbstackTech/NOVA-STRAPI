@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points",
+  "info": {
+    "singularName": "point",
+    "pluralName": "points",
+    "displayName": "point",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "sortDesc": {
+      "type": "string"
+    },
+    "bg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bgSvg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "inversedBy": "points"
+    },
+    "documents_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::documents-page.documents-page",
+      "inversedBy": "points"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "system_carts",
+  "info": {
+    "singularName": "system-cart",
+    "pluralName": "system-carts",
+    "displayName": "system cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "buttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::button.button"
+    }
+  }
+}

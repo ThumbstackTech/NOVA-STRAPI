@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investment_infos",
+  "info": {
+    "singularName": "investment-info",
+    "pluralName": "investment-infos",
+    "displayName": "investment info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "investmentTag": {
+      "type": "string"
+    },
+    "investmentAmount": {
+      "type": "biginteger"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

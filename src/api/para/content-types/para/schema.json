@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paras",
+  "info": {
+    "singularName": "para",
+    "pluralName": "paras",
+    "displayName": "para",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::api-product.api-product",
+      "inversedBy": "paras"
+    },
+    "doc_fundamental": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doc-fundamental.doc-fundamental",
+      "inversedBy": "paras"
+    },
+    "desc": {
+      "type": "dynamiczone",
+      "components": [
+        "happy.paragraph"
+      ]
+    }
+  }
+}

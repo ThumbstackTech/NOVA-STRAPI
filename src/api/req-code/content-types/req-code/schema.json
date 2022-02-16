@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "req_codes",
+  "info": {
+    "singularName": "req-code",
+    "pluralName": "req-codes",
+    "displayName": "ReqCode"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "documentation_codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::documentation-code.documentation-code",
+      "mappedBy": "req_code"
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "req_code"
+    }
+  }
+}

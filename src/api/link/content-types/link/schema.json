@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links",
+  "info": {
+    "singularName": "link",
+    "pluralName": "links",
+    "displayName": "link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "link_collection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::link-collection.link-collection",
+      "inversedBy": "links"
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "inversedBy": "links"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::api-product.api-product",
+      "inversedBy": "links"
+    },
+    "doc_fundamental": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doc-fundamental.doc-fundamental",
+      "inversedBy": "links"
+    }
+  }
+}

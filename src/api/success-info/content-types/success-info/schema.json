@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "success_infos",
+  "info": {
+    "singularName": "success-info",
+    "pluralName": "success-infos",
+    "displayName": "success info"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "successRate": {
+      "type": "decimal"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "success_info"
+    }
+  }
+}

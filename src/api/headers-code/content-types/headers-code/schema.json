@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headers_codes",
+  "info": {
+    "singularName": "headers-code",
+    "pluralName": "headers-codes",
+    "displayName": "headersCode"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "documentation_codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::documentation-code.documentation-code",
+      "mappedBy": "headers_code"
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "headers_code"
+    }
+  }
+}

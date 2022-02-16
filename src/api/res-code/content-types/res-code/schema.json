@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "res_codes",
+  "info": {
+    "singularName": "res-code",
+    "pluralName": "res-codes",
+    "displayName": "resCode"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "documentation_codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::documentation-code.documentation-code",
+      "mappedBy": "res_code"
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "res_code"
+    }
+  }
+}
