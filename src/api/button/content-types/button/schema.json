@@ -16,12 +16,6 @@
     },
     "href": {
       "type": "string"
-    },
-    "learn": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::learn.learn",
-      "inversedBy": "buttons"
     }
   }
 }

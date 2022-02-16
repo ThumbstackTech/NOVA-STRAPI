@@ -21,12 +21,6 @@
       "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": true
-    },
-    "sidebar_collection": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::sidebar-collection.sidebar-collection",
-      "inversedBy": "sidebar_links"
     }
   }
 }

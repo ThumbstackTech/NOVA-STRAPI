@@ -18,19 +18,9 @@
       "type": "string"
     },
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
-    },
-    "api_product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-product.api-product",
-      "mappedBy": "response_info"
     }
   }
 }

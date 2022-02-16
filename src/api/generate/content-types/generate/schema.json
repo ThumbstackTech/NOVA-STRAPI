@@ -16,11 +16,6 @@
     },
     "subtitle": {
       "type": "string"
-    },
-    "buttons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::button.button"
     }
   }
 }

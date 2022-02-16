@@ -14,11 +14,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "section_data": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::section-data.section-data"
     }
   }
 }

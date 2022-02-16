@@ -13,12 +13,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "service_carts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::service-cart.service-cart",
-      "mappedBy": "service"
     }
   }
 }

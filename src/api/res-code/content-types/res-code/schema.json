@@ -13,18 +13,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "documentation_codes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::documentation-code.documentation-code",
-      "mappedBy": "res_code"
-    },
-    "api_product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-product.api-product",
-      "mappedBy": "res_code"
     }
   }
 }

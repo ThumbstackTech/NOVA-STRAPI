@@ -14,12 +14,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "sidebar_links": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::sidebar-link.sidebar-link",
-      "mappedBy": "sidebar_collection"
     }
   }
 }

@@ -24,19 +24,9 @@
       "type": "integer"
     },
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
-    },
-    "api_kits_card": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-kits-card.api-kits-card",
-      "mappedBy": "downloads_info"
     }
   }
 }

@@ -31,19 +31,9 @@
       "type": "string"
     },
     "logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
-    },
-    "service": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::service.service",
-      "inversedBy": "service_carts"
     }
   }
 }

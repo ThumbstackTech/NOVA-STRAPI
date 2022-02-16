@@ -40,127 +40,32 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "bg": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "bgSvg": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "topRightCornerImg": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
-    "section_data": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::section-data.section-data",
-      "inversedBy": "api_kits_cards"
-    },
-    "points": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::point.point",
-      "mappedBy": "api_kits_card"
-    },
+
     "descImg": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "api_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-info.api-info"
-    },
-    "downloads_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::downloads-info.downloads-info",
-      "inversedBy": "api_kits_card"
-    },
-    "investment_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::investment-info.investment-info"
-    },
-    "rating_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::rating-info.rating-info"
-    },
-    "response_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::response-info.response-info"
-    },
-    "success_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::success-info.success-info"
-    },
-    "dev_docs_screen": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::dev-docs-screen.dev-docs-screen",
-      "inversedBy": "api_kits_cards"
-    },
-    "systems_page": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::systems-page.systems-page",
-      "inversedBy": "api_kits_cards"
-    },
-    "links": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::link.link",
-      "mappedBy": "api_kits_card"
-    },
-    "return_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::return-info.return-info",
-      "inversedBy": "api_kits_card"
-    },
-    "filterTag": {
-      "type": "string"
-    },
-    "documents_page": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::documents-page.documents-page",
-      "inversedBy": "api_kits_cards"
+      "allowedTypes": ["images", "files", "videos"]
     }
   }
 }

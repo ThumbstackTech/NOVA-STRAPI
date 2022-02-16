@@ -25,19 +25,9 @@
       "type": "integer"
     },
     "img": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
-    },
-    "strategy": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::strategy.strategy",
-      "inversedBy": "strategy_carts"
     }
   }
 }

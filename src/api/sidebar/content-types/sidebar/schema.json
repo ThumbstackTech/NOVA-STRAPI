@@ -11,12 +11,5 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {
-    "link_collections": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::link-collection.link-collection",
-      "mappedBy": "sidebar"
-    }
-  }
+  "attributes": {}
 }

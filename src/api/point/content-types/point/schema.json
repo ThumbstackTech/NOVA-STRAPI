@@ -22,43 +22,19 @@
       "type": "string"
     },
     "bg": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
     },
     "bgSvg": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
     },
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
-    },
-    "api_kits_card": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::api-kits-card.api-kits-card",
-      "inversedBy": "points"
-    },
-    "documents_page": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::documents-page.documents-page",
-      "inversedBy": "points"
     }
   }
 }

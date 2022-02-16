@@ -19,22 +19,12 @@
       "max": 100
     },
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
     },
     "tag": {
       "type": "string"
-    },
-    "api_kits_card": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-kits-card.api-kits-card",
-      "inversedBy": "return_info"
     }
   }
 }

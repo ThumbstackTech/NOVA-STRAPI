@@ -21,33 +21,11 @@
     "apiType": {
       "type": "string"
     },
-    "section_data": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::section-data.section-data",
-      "mappedBy": "api_product"
-    },
+
     "desc": {
       "type": "text"
     },
-    "api_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-info.api-info",
-      "inversedBy": "api_product"
-    },
-    "response_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::response-info.response-info",
-      "inversedBy": "api_product"
-    },
-    "success_info": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::success-info.success-info",
-      "inversedBy": "api_product"
-    },
+
     "subTitle": {
       "type": "string"
     },
@@ -56,36 +34,6 @@
     },
     "subTag": {
       "type": "string"
-    },
-    "headers_code": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::headers-code.headers-code",
-      "inversedBy": "api_product"
-    },
-    "res_code": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::res-code.res-code",
-      "inversedBy": "api_product"
-    },
-    "req_code": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::req-code.req-code",
-      "inversedBy": "api_product"
-    },
-    "links": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::link.link",
-      "mappedBy": "api_product"
-    },
-    "paras": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::para.para",
-      "mappedBy": "api_product"
     }
   }
 }

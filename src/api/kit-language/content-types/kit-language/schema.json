@@ -16,11 +16,6 @@
     },
     "bottomTag": {
       "type": "string"
-    },
-    "icons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::icon.icon"
     }
   }
 }

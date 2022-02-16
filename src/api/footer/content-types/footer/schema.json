@@ -22,27 +22,13 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "footerTitle": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "footer_collections": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::footer-collection.footer-collection",
-      "mappedBy": "footer"
+      "allowedTypes": ["images", "files", "videos"]
     }
   }
 }

@@ -21,19 +21,9 @@
       "type": "decimal"
     },
     "icon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": true
-    },
-    "api_product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::api-product.api-product",
-      "mappedBy": "success_info"
     }
   }
 }

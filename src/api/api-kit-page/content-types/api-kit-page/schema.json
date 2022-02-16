@@ -12,19 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "api_kits_cards": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::api-kits-card.api-kits-card"
-    },
     "title": {
       "type": "string"
-    },
-    "section_data": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::section-data.section-data",
-      "mappedBy": "api_kit_page"
     }
   }
 }

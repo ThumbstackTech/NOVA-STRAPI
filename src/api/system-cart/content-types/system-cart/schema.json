@@ -13,18 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "img": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": true
-    },
-    "buttons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::button.button"
     }
   }
 }
