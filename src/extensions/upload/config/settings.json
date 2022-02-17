@@ -1,8 +1,0 @@
-{
-    "provider":"cloudinary",
-"providerOptions":{
-    "cloud_name":"nova-assets",
-    "api_key":"577567182854634",
-    "api_secret":"_f4ek2KigSPeZEHtNQi_b2QoEkM"
-}
-}
