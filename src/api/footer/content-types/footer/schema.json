@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -29,6 +29,12 @@
       "multiple": false,
       "required": false,
       "allowedTypes": ["images", "files", "videos"]
+    },
+    "footer_collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::footer-collection.footer-collection",
+      "mappedBy": "footer"
     }
   }
 }

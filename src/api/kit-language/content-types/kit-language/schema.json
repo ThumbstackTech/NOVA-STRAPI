@@ -7,7 +7,7 @@
     "displayName": "kit language"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,6 +16,11 @@
     },
     "bottomTag": {
       "type": "string"
+    },
+    "icons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::icon.icon"
     }
   }
 }

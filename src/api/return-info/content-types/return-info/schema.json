@@ -7,7 +7,7 @@
     "displayName": "return info"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -25,6 +25,12 @@
     },
     "tag": {
       "type": "string"
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "mappedBy": "return_info"
     }
   }
 }

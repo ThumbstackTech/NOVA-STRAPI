@@ -8,12 +8,24 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "sidebar_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sidebar-link.sidebar-link",
+      "mappedBy": "sidebar_collection"
+    },
+    "sidebar": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sidebar.sidebar",
+      "inversedBy": "sidebar_collections"
     }
   }
 }

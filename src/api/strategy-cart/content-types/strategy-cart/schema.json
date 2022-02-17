@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -28,6 +28,12 @@
       "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
+    },
+    "strategy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::strategy.strategy",
+      "inversedBy": "strategy_carts"
     }
   }
 }

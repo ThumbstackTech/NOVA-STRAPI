@@ -7,12 +7,18 @@
     "displayName": "strategy"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "strategy_carts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::strategy-cart.strategy-cart",
+      "mappedBy": "strategy"
     }
   }
 }

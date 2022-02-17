@@ -7,12 +7,24 @@
     "displayName": "ReqCode"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "documentation_codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::documentation-code.documentation-code",
+      "mappedBy": "req_code"
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "req_code"
     }
   }
 }

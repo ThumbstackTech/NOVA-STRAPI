@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -35,6 +35,18 @@
       "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "inversedBy": "points"
+    },
+    "documents_page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::documents-page.documents-page",
+      "inversedBy": "points"
     }
   }
 }
