@@ -1,6 +1,4 @@
 const { createCoreController } = require("@strapi/strapi").factories;
-const Mapitem =
-  require("../../../extensions/strapiEliminateExtraField.js").default;
 
 module.exports = createCoreController(
   "api::api-kit-page.api-kit-page",

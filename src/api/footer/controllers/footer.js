@@ -1,6 +1,5 @@
 const { createCoreController } = require("@strapi/strapi").factories;
-const Mapitem =
-  require("../../../extensions/strapiEliminateExtraField.js").default;
+
 module.exports = createCoreController("api::footer.footer", ({ strapi }) => ({
   async find(ctx) {
     (ctx.query = {
