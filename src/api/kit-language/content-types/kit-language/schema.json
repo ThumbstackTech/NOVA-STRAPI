@@ -7,7 +7,7 @@
     "displayName": "kit language"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

@@ -7,7 +7,7 @@
     "displayName": "headersCode"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

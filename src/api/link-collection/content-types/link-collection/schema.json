@@ -7,7 +7,7 @@
     "displayName": "link-collection"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

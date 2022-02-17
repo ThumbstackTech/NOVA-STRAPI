@@ -7,7 +7,7 @@
     "displayName": "sidebar-link"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

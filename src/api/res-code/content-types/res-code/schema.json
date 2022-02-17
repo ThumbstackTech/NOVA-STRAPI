@@ -7,7 +7,7 @@
     "displayName": "resCode"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

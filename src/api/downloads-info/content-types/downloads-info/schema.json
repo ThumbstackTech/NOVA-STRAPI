@@ -7,7 +7,7 @@
     "displayName": "downloads info"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

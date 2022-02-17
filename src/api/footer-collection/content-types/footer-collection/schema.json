@@ -7,7 +7,7 @@
     "displayName": "footer collection"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

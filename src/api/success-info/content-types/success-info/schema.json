@@ -7,7 +7,7 @@
     "displayName": "success info"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

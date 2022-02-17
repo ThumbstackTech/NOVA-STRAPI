@@ -7,7 +7,7 @@
     "displayName": "return info"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

@@ -7,7 +7,7 @@
     "displayName": "ReqCode"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {

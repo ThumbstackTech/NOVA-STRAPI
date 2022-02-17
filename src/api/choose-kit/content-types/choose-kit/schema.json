@@ -7,7 +7,7 @@
     "displayName": "choose kit"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
