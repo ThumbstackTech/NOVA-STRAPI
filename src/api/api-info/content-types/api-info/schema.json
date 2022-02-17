@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -36,6 +36,12 @@
     },
     "apiCallsAvg": {
       "type": "integer"
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "api_info"
     }
   }
 }

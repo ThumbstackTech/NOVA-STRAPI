@@ -7,7 +7,7 @@
     "displayName": "docFundamental"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,6 +19,24 @@
     },
     "cardTag": {
       "type": "string"
+    },
+    "paras": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::para.para",
+      "mappedBy": "doc_fundamental"
+    },
+    "links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::link.link",
+      "mappedBy": "doc_fundamental"
+    },
+    "section_data": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-data.section-data",
+      "mappedBy": "doc_fundamental"
     }
   }
 }

@@ -7,7 +7,7 @@
     "displayName": "success info"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -24,6 +24,12 @@
       "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": true
+    },
+    "api_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::api-product.api-product",
+      "mappedBy": "success_info"
     }
   }
 }

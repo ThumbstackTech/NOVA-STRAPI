@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -35,6 +35,24 @@
     },
     "typeNameTag": {
       "type": "string"
+    },
+    "headers_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::headers-code.headers-code",
+      "inversedBy": "documentation_codes"
+    },
+    "req_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::req-code.req-code",
+      "inversedBy": "documentation_codes"
+    },
+    "res_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::res-code.res-code",
+      "inversedBy": "documentation_codes"
     }
   }
 }

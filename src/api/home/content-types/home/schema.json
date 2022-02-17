@@ -8,12 +8,17 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "section_data": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-data.section-data"
     }
   }
 }

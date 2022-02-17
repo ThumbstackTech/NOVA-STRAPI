@@ -8,8 +8,18 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sidebar_collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sidebar-collection.sidebar-collection",
+      "mappedBy": "sidebar"
+    }
+  }
 }
