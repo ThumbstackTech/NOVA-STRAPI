@@ -33,6 +33,7 @@ module.exports = createCoreController("api::home.home", ({ strapi }) => ({
                   fields: ["url"],
                 },
                 points: {
+                  sort: ["id:ASC"],
                   fields: ["title", "tag", "sortDesc"],
                   populate: {
                     bg: {
