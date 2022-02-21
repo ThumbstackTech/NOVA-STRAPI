@@ -18,6 +18,9 @@ module.exports = createCoreController("api::home.home", ({ strapi }) => ({
                 "subTag",
                 "desc",
                 "filterTag",
+                "slug",
+                "seotitle",
+                "seometaDescription"
               ],
               populate: {
                 avatar: {
