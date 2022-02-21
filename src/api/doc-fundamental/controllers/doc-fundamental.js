@@ -96,6 +96,17 @@ module.exports = createCoreController(
                       icon: { fields: ["url"] },
                     },
                   },
+                  link_collections: {
+                    fields: ["title"],
+                    populate: {
+                      links: {
+                        fields: ["title", "href", "tag"],
+                        populate: {
+                          icon: { fields: ["url"] },
+                        },
+                      }
+                    }
+                  },
                   response_info: {
                     fields: ["title", "tag"],
                     populate: {
@@ -116,16 +127,45 @@ module.exports = createCoreController(
               },
             },
           },
-
-          links: { fields: ["title", "href"] },
+          links: {
+            fields: ["title", "href", "tag"],
+            populate: {
+              icon: {
+                fields: ["url"],
+              }
+            }
+          },
           paras: {
             fields: ["title"],
             populate: {
               desc: {
-                populate: "*",
+                fields: ["title", "desc"],
+                populate: {
+                  points: {
+                    fields: ["title", "description"],
+                  }
+                },
               },
             },
           },
+          points: {
+            fields: ["title", "tag", "sortDesc", "description"],
+            populate: {
+              icon: {
+                fields: ["url"],
+              },
+              bg: {
+                fields: ["url"],
+              },
+              bgSvg: {
+                fields: ["url"],
+              }
+            }
+
+          },
+          documentation_code: {
+            fields: ["title", "key", "field", "mandatory", "description", "values", "subtitle", "typenameTag"],
+          }
         },
       }),
         // Calling the default core action

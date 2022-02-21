@@ -22,19 +22,34 @@
       "type": "string"
     },
     "bg": {
-      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "bgSvg": {
-      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "icon": {
-      "allowedTypes": ["images", "files", "videos"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "api_kits_card": {
       "type": "relation",
@@ -46,6 +61,15 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::documents-page.documents-page",
+      "inversedBy": "points"
+    },
+    "description": {
+      "type": "text"
+    },
+    "doc_fundamental": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doc-fundamental.doc-fundamental",
       "inversedBy": "points"
     }
   }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "link-collection",
     "pluralName": "link-collections",
-    "displayName": "link-collection"
+    "displayName": "linkCollection",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
       "relation": "oneToMany",
       "target": "api::link.link",
       "mappedBy": "link_collection"
+    },
+    "api_kits_card": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::api-kits-card.api-kits-card",
+      "inversedBy": "link_collections"
     }
   }
 }

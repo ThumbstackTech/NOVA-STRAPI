@@ -53,6 +53,12 @@
       "relation": "manyToOne",
       "target": "api::res-code.res-code",
       "inversedBy": "documentation_codes"
+    },
+    "doc_fundamental": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doc-fundamental.doc-fundamental",
+      "inversedBy": "documentation_codes"
     }
   }
 }

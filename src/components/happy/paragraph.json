@@ -12,6 +12,11 @@
     },
     "desc": {
       "type": "text"
+    },
+    "points": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::point.point"
     }
   }
 }

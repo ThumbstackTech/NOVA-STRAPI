@@ -4,7 +4,8 @@
   "info": {
     "singularName": "doc-fundamental",
     "pluralName": "doc-fundamentals",
-    "displayName": "docFundamental"
+    "displayName": "docFundamental",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -36,6 +37,18 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::section-data.section-data",
+      "mappedBy": "doc_fundamental"
+    },
+    "points": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::point.point",
+      "mappedBy": "doc_fundamental"
+    },
+    "documentation_codes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::documentation-code.documentation-code",
       "mappedBy": "doc_fundamental"
     }
   }

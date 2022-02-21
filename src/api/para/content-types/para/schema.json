@@ -29,7 +29,9 @@
     },
     "desc": {
       "type": "dynamiczone",
-      "components": ["happy.paragraph"]
+      "components": [
+        "happy.paragraph"
+      ]
     }
   }
 }
