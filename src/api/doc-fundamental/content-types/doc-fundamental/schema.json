@@ -50,6 +50,12 @@
       "relation": "oneToMany",
       "target": "api::documentation-code.documentation-code",
       "mappedBy": "doc_fundamental"
+    },
+    "api_kits_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::api-kits-card.api-kits-card",
+      "mappedBy": "doc_fundamental"
     }
   }
 }

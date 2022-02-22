@@ -176,6 +176,12 @@
       "relation": "oneToMany",
       "target": "api::link-collection.link-collection",
       "mappedBy": "api_kits_card"
+    },
+    "doc_fundamental": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doc-fundamental.doc-fundamental",
+      "inversedBy": "api_kits_cards"
     }
   }
 }
